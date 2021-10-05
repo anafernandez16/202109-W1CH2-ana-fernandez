@@ -54,7 +54,8 @@ function airlines(flightsList) {
   //últimos 5 vuelos
   let lastFlights = flightsList.slice(-5);
   let lastFlightsDestination = [];
-  for (let i = 0; i < lastFlights.length; i++) {
+  let i = 0;
+  for (i of lastFlights) {
     lastFlightsDestination.push(lastFlights[i].to);
   }
   console.log(
