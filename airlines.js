@@ -30,6 +30,7 @@ function airlines(flightsList) {
   let costeTotal = 0;
   let totalScale = 0;
   console.log(`Bienvenid@, ${name}`);
+  let i = 0;
   for (let i = 0; i < flightsList.length; i++) {
     let escala;
     if (flightsList[i].scale === false) {
@@ -54,7 +55,7 @@ function airlines(flightsList) {
   //últimos 5 vuelos
   let lastFlights = flightsList.slice(-5);
   let lastFlightsDestination = [];
-  let i = 0;
+
   for (i of lastFlights) {
     lastFlightsDestination.push(lastFlights[i].to);
   }
